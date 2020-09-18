@@ -80,7 +80,7 @@ export default function ReleaseComponent(props) {
                 <td>{props.release.startDate}</td>
                 <td>{props.release.releaseDate}</td>
                 <td>{props.release.description}</td>
-                <td>u
+                <td>
                     <span className="actionsMenu"
                         onClick={() => setShowActionMenu(!showActionMenu)}
                         ref={ref}
