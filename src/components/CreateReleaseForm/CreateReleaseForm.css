@@ -1,0 +1,53 @@
+.addReleaseForm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .addButton{
+    padding: 5px 18px;
+    color: whie;
+    color: #ffffff;
+    background: rgb(5, 5, 151);
+    border-radius: 6px;
+    margin-right: 21px;
+    cursor: pointer;
+  }
+  
+  .versionName{
+    padding: 5px;
+    background-color: rgb(192, 192, 228);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+  }
+  
+  .startDate{
+    padding: 5px;
+    background-color: rgb(192, 192, 228);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+  }
+  
+  .releaseDate{
+    padding: 5px;
+    background-color: rgb(192, 192, 228);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+  }
+  
+  .description{
+    padding: 5px;
+    background-color: rgb(192, 192, 228);
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+  }
+
+  .errorMesssage{
+      font-size: 11px;
+      color: red;
+      padding-top: 3pxs;
+  }

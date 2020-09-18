@@ -1,0 +1,57 @@
+.releaseContainer{
+    background-color: #ffffff;
+    width: 97vw;
+    height: 82vh;
+    padding: 10px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead{
+    border-bottom: 3px solid rgb(107, 213, 240);
+}
+
+th{
+    padding: 10px;
+    text-align: left;
+}
+
+td{
+    padding: 10px;
+    text-align: left;
+}
+
+.tableWrap {
+    height: 76vh;
+    /* border: 2px solid black; */
+    overflow: auto;
+  }
+
+ thead tr th {
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid rgb(107, 213, 240);
+    background-color: #ffffff;
+  }
+
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background:  rgb(107, 213, 240);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    cursor: pointer;
+  }

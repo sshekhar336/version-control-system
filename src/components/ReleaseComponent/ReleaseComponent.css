@@ -1,0 +1,22 @@
+.actionsMenu{
+    cursor: pointer;
+}
+
+.moveIcon{
+    cursor: pointer;
+}
+
+.actionMenu{
+    border: 1px solid;
+    padding: 5px 3px;
+    position: absolute;
+    width: 110px;
+    right: 10px;
+    border-radius: 5px;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+.eachTaskMenu:hover{
+    background-color:  rgb(107, 213, 240);
+}
