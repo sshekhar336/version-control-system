@@ -13,6 +13,7 @@ export default function ReleaseComponent(props) {
     const [showCreateTaskModal, setShowCreateTaskModal] = useState(false);
     const [showActionMenu, setShowActionMenu] = useState(false);
     const [showReleaseEditModal, setShowReleaseEditModal] = useState(false);
+    const [currentTaskIndex, setCurrentTaskIndex] = useState(null);
 
     const ref = useRef();
 
@@ -127,41 +128,44 @@ export default function ReleaseComponent(props) {
                                     <td>{task.startDate ? task.startDate : ""}</td>
                                     <td>{task.endDate ? task.endDate : ""}</td>
                                     <td>{task.description ? task.description : ""}</td>
-                                    <td><button className="addButton" onClick={() => setShowEditTaskModal(!showEditTaskModal)}>Edit</button></td>
+                                    <td><button className="addButton" onClick={() => {
+                                        setCurrentTaskIndex(taskIndex)
+                                        setShowEditTaskModal(!showEditTaskModal)}}>Edit</button></td>
                                 </tr>
-                                {
-                                    showEditTaskModal ?
-                                        <Modal
-                                            isOpen={showEditTaskModal}
-                                            onRequestClose={() => setShowEditTaskModal(false)}
-                                            style={{
-                                                content: {
-                                                    top: '50%',
-                                                    left: '50%',
-                                                    right: 'auto',
-                                                    bottom: 'auto',
-                                                    marginRight: '-50%',
-                                                    transform: 'translate(-50%, -50%)',
-                                                    width: '95vw'
-                                                }
-                                            }}
-                                        >
-                                            <EditTaskForm
-                                                currentRelease={props.release}
-                                                releases={props.releases}
-                                                setReleases={props.setReleases}
-                                                taskIndex={taskIndex}
-                                                index={props.index}
-                                                currentTask={task}
-                                                setShowEditTaskModal={() => setShowEditTaskModal(false)}
-                                            />
-
-                                        </Modal>
-                                        : null
-                                }
-
                             </React.Fragment>
-                        }) : props.release && props.release.tasks && props.release.tasks.length === 0 ? <tr><td colSpan="8">No tasks available</td></tr> : null
+                        })
+                        : props.release && props.release.tasks && props.release.tasks.length === 0 ? <tr><td colSpan="8">No tasks available</td></tr> : null
+                    : null
+            }
+
+            {
+                showEditTaskModal ?
+                    <Modal
+                        isOpen={showEditTaskModal}
+                        onRequestClose={() => setShowEditTaskModal(false)}
+                        style={{
+                            content: {
+                                top: '50%',
+                                left: '50%',
+                                right: 'auto',
+                                bottom: 'auto',
+                                marginRight: '-50%',
+                                transform: 'translate(-50%, -50%)',
+                                width: '95vw'
+                            }
+                        }}
+                    >
+                        <EditTaskForm
+                            currentRelease={props.release}
+                            releases={props.releases}
+                            setReleases={props.setReleases}
+                            taskIndex={currentTaskIndex}
+                            index={props.index}
+                            currentTask={props.release.tasks[currentTaskIndex]}
+                            setShowEditTaskModal={() => setShowEditTaskModal(false)}
+                        />
+
+                    </Modal>
                     : null
             }
 
