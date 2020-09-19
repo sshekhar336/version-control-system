@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/version-control-system/static/css/main.350d312f.chunk.css",
-    "main.js": "/version-control-system/static/js/main.c4592b3d.chunk.js",
-    "main.js.map": "/version-control-system/static/js/main.c4592b3d.chunk.js.map",
+    "main.js": "/version-control-system/static/js/main.f75cfad5.chunk.js",
+    "main.js.map": "/version-control-system/static/js/main.f75cfad5.chunk.js.map",
     "runtime-main.js": "/version-control-system/static/js/runtime-main.f3d11c92.js",
     "runtime-main.js.map": "/version-control-system/static/js/runtime-main.f3d11c92.js.map",
     "static/js/2.c0295d78.chunk.js": "/version-control-system/static/js/2.c0295d78.chunk.js",
     "static/js/2.c0295d78.chunk.js.map": "/version-control-system/static/js/2.c0295d78.chunk.js.map",
     "index.html": "/version-control-system/index.html",
-    "precache-manifest.9435aedb6b6294fb0f079ca283112c53.js": "/version-control-system/precache-manifest.9435aedb6b6294fb0f079ca283112c53.js",
+    "precache-manifest.7b6645ac77ebed27c18fb0f9969500fe.js": "/version-control-system/precache-manifest.7b6645ac77ebed27c18fb0f9969500fe.js",
     "service-worker.js": "/version-control-system/service-worker.js",
     "static/css/main.350d312f.chunk.css.map": "/version-control-system/static/css/main.350d312f.chunk.css.map",
     "static/js/2.c0295d78.chunk.js.LICENSE.txt": "/version-control-system/static/js/2.c0295d78.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f3d11c92.js",
     "static/js/2.c0295d78.chunk.js",
     "static/css/main.350d312f.chunk.css",
-    "static/js/main.c4592b3d.chunk.js"
+    "static/js/main.f75cfad5.chunk.js"
   ]
 }
